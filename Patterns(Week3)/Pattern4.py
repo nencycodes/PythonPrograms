@@ -1,9 +1,9 @@
-n = int(input("enter"))
-for i in range(1, n+1):
-    print("*", end=" ")
-    for j in range(n+1-i):
-        if (j == 1 or j == n-i):
-            print("*", end="")
+n = int (input("Enter value of n:"))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        if (j % 2 != 0):
+            print(j, end =" ")
         else:
-            print("-", end="")
-    print()
+            print("*", end =" ")
+    print()            
+            

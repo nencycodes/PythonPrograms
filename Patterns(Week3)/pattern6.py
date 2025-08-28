@@ -1,7 +1,8 @@
-n = int(input("enter"))
-for i in range(0, n):
-    for k in range(i):
-        print("-", end = "")
+n = int(input("Enter value : "))
+for i in range(n):
     for j in range(n-i):
-        print("*", end ="")    
-    print()        
+        if ((j==0) or j==(n-i-1)):
+            print("*", end=" ")
+        else:
+            print("_", end=" ")
+    print()
