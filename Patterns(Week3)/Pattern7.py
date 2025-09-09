@@ -1,7 +1,10 @@
-n = int(input())
-for i in range(1, n+1):           
+n = int(input("Enter value: "))
+
+for i in range(1, n+1):
+    # print leading underscores for alignment
     for j in range(n-i):
         print("_", end=" ")
-    for k in range(2*i-1):
-        print("*", end=" ")
+    # print stars with spaces in between (for symmetry)
+    for k in range(i):
+        print("*", end="  ")   # <-- two spaces after star
     print()
